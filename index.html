@@ -1,12 +1,49 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <title>66666</title>
- </head>
- <body>
-  <a href="https://www.bilibili.com/video/BV1GJ411x7h7">不要点</a>
-  <style>
-  </style>
- </body>
+<!doctype html>
+<html style="cursor:url(http://www.longsong.xyz/Count_Visitor/images/cruise.ico),auto;">
+<style>
+  div{
+    width: 20px;
+    height: 20px;
+    background-image:url(http://longsong.games/time/Count_Visitor/images/cruise.ico);
+    position: absolute;
+    border-radius: 50%;
+  }
+</style>
+ 
+<head>
+  <meta charset="utf-8">
+  <title>鼠标特效</title>
+</head>
+ 
+<body style="height: 100%;width: 100%;position=relative">
+
+<div id="warp" onmouseover="over()" onmouseout="out()">
+  <div id="text" style="display: none;">这里面有一段文字</div>
+</div>
+</body>
+ 
+<script>
+  document.onmousemove = function () {
+    var div = document.createElement('div');
+    var x = event.clientX;
+    var y = event.clientY;
+    var o = 10; //这里可以自行调节
+    div.style.left = x + "px";
+    div.style
+    div.style.top = y + "px";
+    document.body.appendChild(div);
+ 
+    for(var i = 0;i<o;i++){
+      setTimeout(function(){
+        document.body.removeChild(div); 
+      },100)
+    }
+ 
+ 
+ 
+ 
+ 
+  }
+</script>
+ 
 </html>
